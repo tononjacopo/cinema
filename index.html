@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Space Cinema</title>
+    <meta name="author" content="Tonon-Jacopo">
+    <meta name="keywords" content="The Space Cinema, nuove uscite, eventi, biglietti, cinema, programmazione, film, trama, orari, pass, promo, offerte, sconti, trailer, ">
+    <meta name="description" content="Scopri tutti i film e gli eventi in programmazione al nostro cinema. Acquista i tuoi biglietti online e vivi un'esperienza cinematografica unica.">
+    <meta name="google-site-verification" content="">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index, follow, noarchive">
+
+    <link rel="icon" type="image/jpg" href="media/img/pianeta-logo-bg-black.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- footer-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/connection-status.css">
+
+    <!--
+    <script type="application/ld+json">
+        {
+            "@context": "",
+            "@type": "",
+            "name": "",
+            "url": "",
+            "logo": ""
+        }
+    </script>
+    -->
+</head>
+<body id="top">
+<div class="gradient-background"></div>
+
+    <section id="acquisto-container">
+        <div id="acquisto-rapido">
+            <div id="left-buy">
+                <p>ACQUISTO RAPIDO</p>
+            </div>
+            <div id="center-buy">
+
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">CINEMA</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li data-films="BAD BOYS - RIDE OR DIE, LA PROFEZIA DEL MALE, THE FALL GUY, INSIDE OUT 2">Roma</li>
+                        <li data-films="SARÒ CON TE, MILANO - THE INSIDE STORY OF ITALIAN FASHION">Milano</li>
+                        <li data-films="KINA E YUK - ALLA SCOPERTA DEL MONDO, OPPENHEIMER, RED, SARÒ CON TE">Napoli</li>
+                        <li data-films="SEI FRATELLI, GODZILLA & KONG - IL NUOVO IMPERO, RED, LA PROFEZIA DEL MALE">Bari</li>
+                        <li data-films="CARACAS, MILANO - THE INSIDE STORY OF ITALIAN FASHION, OPPENHEIMER">Torino</li>
+                        <li data-films="PRISCILLA, CIVIL WAR, GHOSTBUSTERS - MINACCIA GLACIALE, DEADPOOL & WOLVERINE">Bologna</li>
+                        <li data-films="CIVIL WAR, UNA STORIA NERA, THE FALL GUY, GODZILLA & KONG - IL NUOVO IMPERO">Catania</li>
+                        <li data-films="LA PROFEZIA DEL MALE, DEADPOOL & WOLVERINE, CHALLENGERS, UNA STORIA NERA">Firenze</li>
+                        <li data-films="RED, CHALLENGERS, BAD BOYS - RIDE OR DIE, L'ARCADIA DELLA MIA GIOVINEZZA, CARACAS">Genova</li>
+                        <li data-films="IF - GLI AMICI IMMAGINARI, SEI FRATELLI, KINA E YUK - ALLA SCOPERTA DEL MONDO, RED">Palermo</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">FILM</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li data-cinemas="Roma" id="kina-and-yuk">KINA E YUK - ALLA SCOPERTA DEL MONDO</li>
+                        <li data-cinemas="Roma, Milano, Napoli" id="bad-boys">BAD BOYS - RIDE OR DIE</li>
+                        <li data-cinemas="Torino, Genova" id="caracas">CARACAS</li>
+                        <li data-cinemas="Milano, Napoli" id="saro-con-te">SARÒ CON TE</li>
+                        <li data-cinemas="Bologna" id="ghostbusters">GHOSTBUSTERS - MINACCIA GLACIALE</li>
+                        <li data-cinemas="Bari, Catania" id="godzilla-and-kong">GODZILLA & KONG - IL NUOVO IMPERO</li>
+                        <li data-cinemas="Roma, Napoli, Firenze" id="la-profezia-del-male">LA PROFEZIA DEL MALE</li>
+                        <li data-cinemas="Firenze, Palermo" id="deadpool-and-wolverine">DEADPOOL & WOLVERINE</li>
+                        <li data-cinemas="Milano, Napoli, Torino" id="oppenheimer">OPPENHEIMER</li>
+                        <li data-cinemas="Bologna" id="priscilla">PRISCILLA</li>
+                        <li data-cinemas="Roma, Catania" id="the-fall-guy">THE FALL GUY</li>
+                        <li data-cinemas="Napoli, Genova, Palermo" id="red">RED</li>
+                        <li data-cinemas="Genova" id="l-arcadia-della-mia-giovinezza">L'ARCADIA DELLA MIA GIOVINEZZA</li>
+                        <li data-cinemas="Firenze, Genova" id="challengers">CHALLENGERS</li>
+                        <li data-cinemas="Bologna, Catania" id="civil-war">CIVIL WAR</li>
+                        <li data-cinemas="Milano, Torino" id="milano-the-inside-story-of-italian-fashion">MILANO - THE INSIDE STORY OF ITALIAN FASHION</li>
+                        <li data-cinemas="Bari, Catania" id="sei-fratelli">SEI FRATELLI</li>
+                        <li data-cinemas="Catania, Firenze" id="una-storia-nera">UNA STORIA NERA</li>
+                        <li data-cinemas="Roma" id="inside-out-2">INSIDE OUT 2</li>
+                        <li data-cinemas="Palermo" id="if-gli-amici-immaginari">IF - GLI AMICI IMMAGINARI</li>
+                    </ul>
+
+                </div>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">DATA</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>sab 28.04</li>
+                        <li>mar 4.05</li>
+                        <li>lun 5.06</li>
+                        <li>ven 18.06</li>
+                        <li>sab 14.05</li>
+                        <li>dom 12.06</li>
+                        <li>ven 11.07</li>
+                        <li>gio 27.06</li>
+                        <li>dom 2.07</li>
+                        <li>mer 25.05</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">ORARI</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>17:15</li>
+                        <li>14:30</li>
+                        <li>11:30</li>
+                        <li>01:00</li>
+                        <li>12:00</li>
+                        <li>18:30</li>
+                        <li>15:00</li>
+                        <li>19:00</li>
+                        <li>21:45</li>
+                        <li>23:30</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="right-buy">
+                <a id="choose-link" href="#">SCEGLI</a>
+            </div>
+
+        </div>
+    </section>
+    <header>
+
+        <nav class="container" id="navigation">
+            <div id="logo-nav">
+                <a href="index.html">
+                    <img src="media/img/pianeta-logo-nobg.png" alt="logo-nav"/>
+                </a>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#" class="link-nav">HOME</a></li>
+                <li><a href="page/coming-soon.html" class="link-nav">AL CINEMA</a></li>
+                <li><a href="page/coming-soon.html" class="link-nav">PROMOZIONI</a></li>
+                <li><a href="page/coming-soon.html" class="link-nav">BIGLIETTI</a></li>
+                <li><a href="page/coming-soon.html" class="link-nav">NEWS</a></li>
+            </ul>
+            <div id="login-btn">
+                <a href="page/login-register.html" >LOG IN</a>
+            </div>
+            <div id="icon-user-nav">
+                <a id="link-container-svg" href="page/error-404.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#ff8912"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <section>
+        <div class="image-slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="media/locandine/sfondi-film/hero-red-soul-luca.jpg" alt="luca-sfondo"/>
+                </div>
+                <div class="slide">
+                    <img src="media/locandine/sfondi-film/Kunfu-Panda-4.jpg" alt="kunfu-panda-sfondo"/>
+                </div>
+                <div class="slide">
+                    <img src="media/locandine/sfondi-film/Race-for-Glory.jpg" alt="race-for-glory-sfondo"/>
+                </div>
+                <div class="slide">
+                    <img src="media/locandine/sfondi-film/Dune-part2.jpg" alt="dune-sfondo"/>
+                </div>
+            </div>
+            <button class="arrow-left">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF8912"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+            </button>
+            <button class="arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF8912"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+            </button>
+            <div class="dots-container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="header-film-search">
+
+            <div id="evidence-text">
+                <p>FILM IN EVIDENZA</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="search" id="search">
+                <span id="clear-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                         fill="#b7b7b7"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224
+                          224 224 224-56 56-224-224-224 224Z"/></svg></span>
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </div>
+
+        <!--
+        KINA E YUK - ALLA SCOPERTA DEL MONDO
+        BAD BOYS - RIDE OR DIE
+        CARACAS
+        SARÒ CON TE
+        GHOSTBUSTERS - MINACCIA GLACIALE
+        GODZILLA & KONG - IL NUOVO IMPERO
+        LA PROFEZIA DEL MALE
+        DEADPOOL & WOLVERINE
+        OPPENHEIMER
+        PRISCILLA
+        THE FALL GUY
+        RED
+        L'ARCADIA DELLA MIA GIOVINEZZA
+        CHALLENGERS
+        CIVIL WAR
+        MILANO - THE INSIDE STORY OF ITALIAN FASHION
+        SEI FRATELLI
+        UNA STORIA VERA
+        INSIDE OUT 2
+        IF - GLI AMICI IMMAGINARI
+        -->
+        <table id="locandine-film-table">
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="page-film/kina-and-yuk/index.html">
+                            <img src="media/locandine/locandina_kinaeyukallascopertade.jpg" alt="img 1"/>
+                            <div class="title-locandine">KINA E YUK - ALLA SCOPERTA DEL MONDO</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/deadpool-and-wolverine/index.html">
+                            <img src="media/locandine/locandina_deadpoolewolverine.jpg" alt="img 1"/>
+                            <div class="title-locandine">DEADPOOL & WOLVERINE</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/caracas/index.html">
+                            <img src="media/locandine/locandina_caracas.jpg" alt="img 1"/>
+                            <div class="title-locandine">CARACAS</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/saro-con-te/index.html">
+                            <img src="media/locandine/locandina_saroconte.jpg" alt="img 1"/>
+                            <div class="title-locandine">SARÒ CON TE</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/ghostbusters/index.html">
+                            <img src="media/locandine/locandina_ghostbustersminacciagl.jpg" alt="img 1"/>
+                            <div class="title-locandine">GHOSTBUSTERS - MINACCIA GLACIALE</div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="page-film/godzilla-and-kong/index.html">
+                            <img src="media/locandine/locandina_godzilla-e-kong-il-nuo.jpg" alt="img 1"/>
+                            <div class="title-locandine">GODZILLA & KONG - IL NUOVO IMPERO</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/la-profezia-del-male/index.html">
+                            <img src="media/locandine/locandina_laprofeziadelmale_top.jpg" alt="img 1"/>
+                            <div class="title-locandine">LA PROFEZIA DEL MALE</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/bad-boys/index.html">
+                            <img src="media/locandine/locandina_badboaysrideordie.jpg" alt="img 1"/>
+                            <div class="title-locandine">BAD BOYS - RIDE OR DIE</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/oppenheimer/index.html">
+                            <img src="media/locandine/locandina_oppenheimer.jpg" alt="img 1"/>
+                            <div class="title-locandine">OPPENHEIMER</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/priscilla/index.html">
+                            <img src="media/locandine/locandina_priscilla.jpg" alt="img 1"/>
+                            <div class="title-locandine">PRISCILLA</div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="page-film/the-fall-guy/index.html">
+                            <img src="media/locandine/locandina_thefallguy_top.jpg" alt="img 1"/>
+                            <div class="title-locandine">THE FALL GUY</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/red/index.html">
+                            <img src="media/locandine/locandina_red.jpg" alt="img 1"/>
+                            <div class="title-locandine">RED</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/l-arcadia-della-mia-giovinezza/index.html">
+                            <img src="media/locandine/locandina_capitanharlocklarcadiadellamiagiovinezza.jpg" alt="img 1"/>
+                            <div class="title-locandine">L'ARCADIA DELLA MIA GIOVINEZZA</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/challengers/index.html">
+                            <img src="media/locandine/locandina_challengers_top.jpg" alt="img 1"/>
+                            <div class="title-locandine">CHALLENGERS</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/civil-war/index.html">
+                            <img src="media/locandine/locandina_civilwar.jpg" alt="img 1"/>
+                            <div class="title-locandine">CIVIL WAR</div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="page-film/milano-the-inside-story-of-italian-fashion/index.html">
+                            <img src="media/locandine/locandina_milanotheinsidestoryofitalianfashion.jpg" alt="img 1"/>
+                            <div class="title-locandine">MILANO - THE INSIDE STORY <br>OF ITALIAN FASHION</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/sei-fratelli/index.html">
+                            <img src="media/locandine/locandina_seifratelli.jpg" alt="img 1"/>
+                            <div class="title-locandine">SEI FRATELLI</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/una-storia-nera/index.html">
+                            <img src="media/locandine/locandina_unastorianera.jpg" alt="img 1"/>
+                            <div class="title-locandine">UNA STORIA NERA</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/inside-out-2/index.html">
+                            <img src="media/locandine/locandina_insideout2.jpg" alt="img 1"/>
+                            <div class="title-locandine">INSIDE OUT 2</div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="page-film/if-gli-amici-immaginari/index.html">
+                            <img src="media/locandine/locandina_ifgliamiciimmaginari.jpg" alt="img 1"/>
+                            <div class="title-locandine">IF - GLI AMICI IMMAGINARI</div>
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </section>
+    <section class="container">
+
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="left-part-footer">
+                <a href="#top"><img id="img-footer" src="media/img/logo-space-cinema.png" alt="logo footer cinema" /></a>
+                <!--<span>Vivi,<br>Guarda,<br>Sogna!</span>-->
+            </div>
+            <div class="central-part-footer">
+                <div>
+                    <p>THE SPACE</p>
+                    <span>Chi siamo</span>
+                    <span>PNRR</span>
+                    <span>Lavora con noi</span>
+                    <span>I nostri cinema</span>
+                </div>
+                <div>
+                    <p>NOTE LEGALI</p>
+                    <span>Privacy policy</span>
+                    <span>Cookie policy</span>
+                    <span>Condizioni di utilizzo</span>
+                    <span>Regolamenti</span>
+                </div>
+                <div>
+                    <p>SOCIAL</p>
+                    <span><i class="fab fa-facebook"></i></span>
+                    <span><i class="fab fa-x-twitter">&#x1D54F;</i></span>
+                    <span><i class="fab fa-instagram"></i></span>
+                    <span><i class="fab fa-youtube"></i></span>
+                </div>
+            </div>
+            <div class="right-part-footer">
+                <p>CONTATTACI</p>
+                <div id="id-link" class="email-form">
+                    <input type="text" placeholder="Scrivici...">
+                    <a href="#id-link"><img src="media/img/1000_F_367592264_VIOoTXnpNFAmwD1-removebg-preview.png" alt="img send footer"></a>
+                </div>
+            </div>
+        </div>
+        <div id="last-bottom">
+            <p id="copyright">Copyright © 2024 Tonon Jacopo All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <section>
+        <div class="connection-status">
+
+            <div class="not-connected">
+                <span class="material-symbols-outlined">
+                    wifi_off
+                </span>
+                <h4>Connection Lost. You are currenctly offline</h4>
+            </div>
+
+            <div class="connected">
+                <span class="material-symbols-outlined">
+                    wifi
+                </span>
+                <h4>You are back online!</h4>
+            </div>
+
+        </div>
+    </section>
+    <script src="script/popup-connection.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+</html>

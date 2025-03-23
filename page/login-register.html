@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Access | The Space Cinema</title>
+    <meta name="author" content="Tonon-Jacopo">
+    <meta name="keywords" content="The Space Cinema, nuove uscite, eventi, biglietti, cinema, programmazione, film, trama, orari, pass, promo, offerte, sconti, trailer, badboys, boys, rideordie, ">
+    <meta name="description" content="Scopri tutti i film e gli eventi in programmazione al nostro cinema. Acquista i tuoi biglietti online e vivi un'esperienza cinematografica unica.">
+    <meta name="google-site-verification" content="">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index, follow, noarchive">
+
+    <link rel="icon" type="image/jpg" href="../media/img/pianeta-logo-bg-black.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/login-register.css">
+    <link rel="stylesheet" href="../style/connection-status.css">
+</head>
+<body>
+    <section id="form">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="section">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-5">
+                        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+
+                            <h6 class="mb-0 pb-3"><span>Accedi</span><span>Registrati</span></h6>
+                            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                            <label for="reg-log"></label>
+                            <div class="card-3d-wrap mx-auto">
+                                <div class="card-3d-wrapper">
+
+                                    <div class="card-front">
+                                        <div class="center-wrap">
+                                            <form method="POST" action="">
+                                                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']);?>">
+                                                <div class="section text-center">
+                                                    <h4 class="mb-4 pb-3">Accedi</h4>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-style" placeholder="Email" required>
+                                                        <i class="input-icon uil uil-at"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" class="form-style" placeholder="Password" required>
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <div class="accept-terms">
+                                                        <input type="checkbox" id="accept_terms" name="accept_terms" required>
+                                                        <label for="accept_terms">Ricordami</label>
+                                                    </div>
+                                                    <a href="../index.html" class="btn mt-4">Accedi</a>
+                                                    <p class="mb-0 mt-4 text-center">
+                                                        <a href="error-404.html" class="link">Cambia Password</a>
+                                                        <a href="../index.html" class="link ml-2">Home</a>
+                                                    </p>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-back">
+                                        <div class="center-wrap">
+                                            <form method="POST" action="">
+                                                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']);?>">
+                                                <div class="section text-center">
+                                                    <h4 class="mb-3 pb-3">Registrati</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-style" placeholder="Nome" required>
+                                                        <i class="input-icon uil uil-user"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="tel" class="form-style" placeholder="Numero di telefono" required>
+                                                        <i class="input-icon uil uil-phone"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="email" class="form-style" placeholder="Email" required>
+                                                        <i class="input-icon uil uil-at"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" class="form-style" placeholder="Password" required>
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <a href=../index.html class="btn mt-4">Registrati</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="connection-status">
+
+            <div class="not-connected">
+                <span class="material-symbols-outlined">
+                    wifi_off
+                </span>
+                <h4>Connection Lost. You are currenctly offline</h4>
+            </div>
+
+            <div class="connected">
+                <span class="material-symbols-outlined">
+                    wifi
+                </span>
+                <h4>You are back online!</h4>
+            </div>
+
+        </div>
+    </section>
+    <script src="../script/popup-connection.js"></script>
+</body>
+</html>

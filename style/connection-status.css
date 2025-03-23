@@ -1,0 +1,71 @@
+/*connection status*/
+.connection-status > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.connection-status h4 {
+    margin: 0;
+}
+
+.connection-status span {
+    font-size: 1.7em;
+}
+
+.not-connected {
+    background-color: #ef2929;
+}
+
+.connection-status .connected {
+    background-color: #1bd024;
+    display: none;
+}
+
+.connection-status {
+    position: fixed;
+    bottom: -8em;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*Dynamic classes for Javascript*/
+.offline {
+    animation: offline 1s ease-in-out forwards;
+}
+
+.online {
+    animation: online 2s ease-in-out forwards;
+}
+
+@keyframes offline {
+    0% {
+        opacity: 0;
+        bottom: -8em;
+    }
+    100% {
+        opacity: 1;
+        bottom: 6em;
+    }
+}
+
+@keyframes online {
+    0% {
+        opacity: 1;
+        bottom: 6em;
+    }
+    50% {
+        opacity: 1;
+        bottom: 6em;
+    }
+    100% {
+        opacity: 0;
+        bottom: -8em;
+    }
+}
+
+/*finish connection status*/

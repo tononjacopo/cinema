@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --font-1    : "Inter", sans-serif;
+    /* monospace
+    */
+    --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+}
+
+:root {
+
+    --base-size        : 62.5%;
+    --multiplier       : 1;
+    --base-font-size   : calc(1.8rem * var(--multiplier));
+    --space            : calc(3.2rem * var(--multiplier));
+
+    /* vertical spacing */
+    --vspace-0_125     : calc(0.125 * var(--space));
+    --vspace-0_25      : calc(0.25 * var(--space));
+    --vspace-0_375     : calc(0.375 * var(--space));
+    --vspace-0_5       : calc(0.5 * var(--space));
+    --vspace-0_625     : calc(0.625 * var(--space));
+    --vspace-0_75      : calc(0.75 * var(--space));
+    --vspace-0_875     : calc(0.875 * var(--space));
+    --vspace-1         : calc(var(--space));
+    --vspace-1_25      : calc(1.25 * var(--space));
+    --vspace-1_5       : calc(1.5 * var(--space));
+    --vspace-1_75      : calc(1.75 * var(--space));
+    --vspace-2         : calc(2 * var(--space));
+    --vspace-2_5       : calc(2.5 * var(--space));
+    --vspace-3         : calc(3 * var(--space));
+    --vspace-3_5       : calc(3.5 * var(--space));
+    --vspace-4         : calc(4 * var(--space));
+    --vspace-4_5       : calc(4.5 * var(--space));
+    --vspace-5         : calc(5 * var(--space));
+    --text-scale-ratio : 1.2;
+    --text-size        : var(--base-font-size);
+    --text-xs          : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm          : calc(var(--text-xs) * var(--text-scale-ratio));
+    --text-md          : calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg          : calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl          : calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-xxl         : calc(var(--text-xl) * var(--text-scale-ratio));
+    --text-xxxl        : calc(var(--text-xxl) * var(--text-scale-ratio));
+    --text-display-1   : calc(var(--text-xxxl) * var(--text-scale-ratio));
+    --text-display-2   : calc(var(--text-display-1) * var(--text-scale-ratio));
+    --text-display-3   : calc(var(--text-display-2) * var(--text-scale-ratio));
+
+}
+
+:root {
+
+    --width-full     : 100%;
+    --width-max      : 1200px;
+    --width-wide     : 1400px;
+    --width-wider    : 1600px;
+    --width-widest   : 1800px;
+    --width-narrow   : 1000px;
+    --width-narrower : 800px;
+    --width-grid-max : var(--width-max);
+    --gutter         : 2.4rem;
+}
+
+*{
+    box-sizing : inherit;
+}
+
+html {
+    line-height              : 1.15;
+    -webkit-text-size-adjust : 100%;
+    font-size  : var(--base-size);
+    box-sizing : border-box;
+}
+
+body {
+
+    -webkit-overflow-scrolling  : touch;
+    -webkit-text-size-adjust    : 100%;
+    -webkit-tap-highlight-color : rgba(0, 0, 0, 0);
+    -webkit-font-smoothing      : antialiased;
+    -moz-osx-font-smoothing     : grayscale;
+    margin : 0;
+}
+
+
+html,
+body {
+    height : 100%;
+}
+
+p {
+    font-size      : inherit;
+    text-rendering : optimizeLegibility;
+}
+
+.row {
+    width     : 92%;
+    max-width : var(--width-grid-max);
+    margin    : 0 auto;
+    display   : flex;
+    flex-flow : row wrap;
+}
+
+
+
+body {
+    font-family : var(--font-1);
+    font-size   : var(--base-font-size);
+    font-weight : 400;
+    line-height : var(--vspace-1);
+}
+
+h1,
+.h1 {
+    font-size      : var(--text-display-1);
+    line-height    : var(--vspace-2);
+    letter-spacing : -.02em;
+}
+
+
+
+
+/* PAGE WRAP*/
+.s-pagewrap {
+    --header-height : 12rem;
+    display         : flex;
+    flex-direction  : column;
+    min-height      : 100%;
+    overflow        : hidden;
+    position        : relative;
+}
+
+/*HEADER*/
+.s-header {
+    --logo-width : 9.6rem;
+    z-index      : 100;
+    width        : 100%;
+    position     : absolute;
+    top          : var(--vspace-1_25);
+    left         : 0;
+}
+
+.s-header__content {
+    max-width : var(--width-wider);
+    height    : var(--header-height);
+    position  : relative;
+}
+
+/* logo*/
+.s-header__logo {
+    z-index   : 101;
+    transform : translate(0, -50%);
+    position  : absolute;
+    top       : 50%;
+    left      : var(--gutter);
+}
+
+.s-header__logo a {
+    display : block;
+    margin  : 0;
+    padding : 0;
+    outline : 0;
+    border  : none;
+}
+
+.s-header__logo img {
+    width          : var(--logo-width);
+    margin         : 0;
+    vertical-align : bottom;
+}
+
+/*header social*/
+.s-header__social {
+    list-style : none;
+    display    : flex;
+    margin     : 0;
+    transform  : translate(0, -50%);
+    position   : absolute;
+    top        : calc(50% - var(--vspace-0_75));
+    right      : calc(var(--gutter) / 2);
+}
+
+.s-header__social li {
+    padding-left : 0;
+    margin-right : 1.4rem;
+    line-height  : 1;
+}
+
+.s-header__social li:last-child {
+    margin-right : 0;
+}
+
+.s-header__social svg {
+    height : var(--vspace-0_875);
+    width  : var(--vspace-0_875);
+}
+
+.s-header__social svg path {
+    fill : white;
+}
+
+.s-header__social a:hover svg path {
+    fill: #ff8912;
+    transition: 0.25s ease-in-out;
+}
+
+.s-intro__bg {
+    display             : block;
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    right               : 0;
+    bottom              : 0;
+    width               : 100%;
+    height              : 100%;
+    background-image    : url("../media/img/space-landing-comingsoon.jpg");
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-size     : cover;
+}
+
+
+.s-intro__bg::after {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(90deg, black 10%, rgba(0, 0, 0, 0) 100%);
+    pointer-events : none;
+    opacity        : .8;
+}
+
+.s-intro__content {
+    z-index        : 1;
+    max-width      : var(--width-wider);
+    align-items    : flex-end;
+    height         : 100vh;
+    min-height     : calc(25.5 * var(--space));
+    padding-top    : 20vh;
+    padding-bottom : 8.8rem;
+    position       : relative;
+}
+
+.s-intro__content-bottom {
+    max-width   : 600px;
+    font-weight : 300;
+    color       : rgba(255, 255, 255, 0.5);
+    margin-top  : var(--vspace-1);
+}
+
+.s-intro__content-title {
+    font-size     : var(--text-xxl);
+    font-weight   : 400;
+    line-height   : var(--vspace-1_5);
+    color         : white;
+    margin-top    : 0;
+    margin-bottom : var(--vspace-0_25);
+}
+
+/*intro counter*/
+.s-intro .counter {
+    display   : flex;
+    flex-flow : row wrap;
+}
+
+.s-intro .counter__time {
+    display       : flex;
+    align-items   : flex-start;
+    font-weight   : 700;
+    font-size     : 13.2rem;
+    line-height   : 1;
+    color         : white;
+    margin-right  : var(--vspace-0_5);
+    margin-bottom : var(--vspace-0_5);
+}
+
+.s-intro .counter__time span:first-child {
+    letter-spacing : -.03em;
+}
+
+.s-intro .counter__time span:last-child {
+    font-weight : 400;
+    font-size   : .15em;
+    color       : rgba(255, 255, 255, 0.35);
+    transform   : translate(0.2em, 0.8em);
+}
