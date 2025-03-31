@@ -16,7 +16,6 @@ Check out the live demo here: [Cinema Landing Page](https://www.tononjacopo.com/
 - ✅ **Interactive Elements** – Engages users with hover effects, clickable movie posters, and smooth transitions between sections. 🎭
 - ✅ **Smooth Navigation** – Easy-to-use navigation bar with links to different movie categories and information sections. 🚀
 - ✅ **Movie Showcases** – Dedicated sections highlighting featured movies, including images, titles, and brief descriptions. 🍿
-- ✅ **Contact Form** – Allows users to get in touch for inquiries or feedback. ✉️
 
 ## 📸 Screenshots
 
@@ -31,12 +30,6 @@ Check out the live demo here: [Cinema Landing Page](https://www.tononjacopo.com/
 ![Movie Showcase](media/movie_showcase.png)
 
 *Section displaying featured movies with interactive hover effects revealing more information.*
-
-### 🔹 Contact Form
-
-![Contact Form](media/contact_form.png)
-
-*User-friendly contact form for inquiries, located at the bottom of the page.*
 
 ## 🗁 Project Structure
 
