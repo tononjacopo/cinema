@@ -86,4 +86,4 @@ This project is distributed under the **MIT** license. You are free to use, modi
 
 ---
 
-**🔗 [Check out the Demo](https://www.tononjacopo.com/cinema/) and leave a ⭐ on GitHub if you like it!** 😊✨
+**🔗Leave a ⭐ on GitHub if you like it!** 😊✨
