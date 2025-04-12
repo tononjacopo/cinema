@@ -6,10 +6,6 @@
 
 A modern and responsive landing page for a cinema website, showcasing movie information with a clean design, interactive elements, and smooth navigation.
 
-## 🌐 Live Demo
-
-Check out the live demo here: [Cinema Landing Page](https://www.tononjacopo.com/cinema/)
-
 ## 🔥 Features
 
 - ✅ **Responsive Design** – Optimized for various screen sizes, ensuring a seamless experience on desktops, tablets, and smartphones. 📱💻
