@@ -17,15 +17,38 @@ A modern and responsive landing page for a cinema website, showcasing movie info
 
 ### 🔹 Homepage
 
-![Homepage](media/homepage.png)
+![Homepage](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/viewport.png)
 
 *Main screen of the cinema landing page, featuring the latest movie releases and promotional banners.*
 
+### 🔹 Homepage Showcase
+
+![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/under-the-page.png)
+
+*Section displaying all movies with interactive hover effects revealing more information.*
+
 ### 🔹 Movie Showcase
 
-![Movie Showcase](media/movie_showcase.png)
+![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/page-film.png)
 
-*Section displaying featured movies with interactive hover effects revealing more information.*
+*Section displaying the movie selected with all information.*
+
+### 🔹 Login page
+
+![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/login.png)
+
+*Incredible login and signup page.*
+
+### 🔹 Cooming Soon
+
+![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/cooming-soon.png)
+
+*Section displaying a timer for a future extension of the website.*
+
+### 🔹 404 Page
+
+![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/404.png)
+
 
 ## 🗁 Project Structure
 
