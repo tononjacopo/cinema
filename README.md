@@ -41,7 +41,7 @@ A modern and responsive landing page for a cinema website, showcasing movie info
 
 ### 🔹 Cooming Soon
 
-![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/cooming-soon.png)
+![Movie Showcase](https://github.com/tononjacopo/cinema/blob/e3e1da8084b17e62ec72c9193ac440650019e2cb/screenshot/coming-soon.png)
 
 *Section displaying a timer for a future extension of the website.*
 
